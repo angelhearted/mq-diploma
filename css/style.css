@@ -13,6 +13,18 @@
 
 body {
   font-family: 'OpenSans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .container {
@@ -22,7 +34,8 @@ body {
 
 .container > div {
   flex-basis: 100%;
-  height: 560px;
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
@@ -40,6 +53,28 @@ h1, h2, h3 {
   font-weight: bold;
 }
 
+h2 {
+  margin: 8px 20px 0;
+  font-size: 46px;
+  color: #e7e7e7;
+}
+
+h3 {
+  margin: 0 20px 0;
+  font-size: 28px;
+  color: #c1c1c1;
+}
+
+h3 .enum {
+  display: block;
+  float: left;
+  width: 17px;
+  margin: 7px 6px 0;
+  border-bottom: 4px solid #5e42b0;
+  font-size: 0.5em;
+  color: #000000;
+}
+
 #h1-1 {
   top: 206px;
   left: 20px;
@@ -52,31 +87,77 @@ h1, h2, h3 {
   position: absolute;
 }
 
-.page-1 {
+/* Header */
+
+.block-header {
+  height: 560px;
   background: url('/img/bg-01_320.png');
   background-size: contain;
   background-color: #1c1f40;
   color: #FFFFFF;
 }
 
-.buttons {
+.downloads {
   position: absolute;
   top: 400px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: calc(100% - 40px);
 }
 
 button {
   background-color: #5e42b0;
-  border-radius: 1em;
+  border-radius: 18px;
   border: 0px;
-  height: 24px;
+  height: 36px;
   width: 100%;
-  margin-left: 20px;
-  margin-right: 20px;
+  font-size: 8px;
+  text-transform: uppercase;
   color: #FFFFFF;
 }
 
 button:nth-child(2) {
   margin-top: 1em;
+}
+
+button svg {
+  height: 22px;
+  display: block;
+  float: left;
+  margin-right: 0.8em;
+}
+
+.downloads .get-on {
+  width: 104px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.downloads .store-name {
+  font-weight: bold;
+  display: block;
+}
+
+/* Athlets */
+
+.block-athlets img {
+  position: absolute;
+  left: 22%;
+  margin-top: 8px;
+  z-index: 10;
+}
+
+.block-athlets .white {
+  height: 296px;
+
+}
+
+.block-athlets .grey1 {
+  position: relative;
+  background-color: #fafafa;
+  padding-top: 76px;
+  padding-bottom: 40px;
 }
 
 @media (max-width: 640px) {
