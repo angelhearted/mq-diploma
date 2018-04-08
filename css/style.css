@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'OpenSans';
-  src: url('sources/fonts/OpenSans-Regular.woff') format('woff'), /* Modern Browsers */
-       url('sources/fonts/OpenSans-Regular.ttf')  format('truetype') /* IE, Safari, Android, iOS */
+  src: url('../sources/fonts/OpenSans-Regular.woff') format('woff'), /* Modern Browsers */
+       url('../sources/fonts/OpenSans-Regular.ttf')  format('truetype') /* IE, Safari, Android, iOS */
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src: url('sources/fonts/OpenSans-Bold.woff') format('woff'),
-       url('sources/fonts/OpenSans-Bold.ttf')  format('truetype');
+  src: url('../sources/fonts/OpenSans-Bold.woff') format('woff'),
+       url('../sources/fonts/OpenSans-Bold.ttf')  format('truetype');
   font-weight: bold;
 }
 
@@ -54,8 +54,8 @@ h1, h2, h3 {
 }
 
 h2 {
-  margin: 8px 20px 0;
-  font-size: 46px;
+  margin: 8px 20px 0 14px;
+  font-size: 50px;
   color: #e7e7e7;
 }
 
@@ -73,6 +73,14 @@ h3 .enum {
   border-bottom: 4px solid #5e42b0;
   font-size: 0.5em;
   color: #000000;
+}
+
+h3 .enum-purple {
+  color: #5e42b0
+}
+
+h3 .enum-under-invert {
+  border-bottom-color: #FFFFFF
 }
 
 #h1-1 {
@@ -148,16 +156,47 @@ button svg {
   z-index: 10;
 }
 
-.block-athlets .white {
+.img-paragraph {
   height: 296px;
-
 }
 
-.block-athlets .grey1 {
-  position: relative;
+.grey1 {
   background-color: #fafafa;
-  padding-top: 76px;
+}
+
+.grey2 {
+  background-color: #f5f4f9;
+}
+
+.purple {
+  background-color: #5e42b0;
+  color: #ffffff;
+}
+
+.paragraph {
+  position: relative;
+  padding-top: 52px;
   padding-bottom: 40px;
+  font-size: 15px;
+}
+
+/* first paragraph has bigger top padding */
+.paragraph.first-paragraph {
+  padding-top: 76px;
+}
+
+/* Players */
+
+.block-players img {
+  position: absolute;
+  /*left: 22%;*/
+  margin-top: 8px;
+  z-index: 10;
+}
+
+.dark-purple {
+  background-color: #090c35;
+  color: #ffffff;
 }
 
 @media (max-width: 640px) {
