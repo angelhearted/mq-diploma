@@ -25,6 +25,7 @@ h1, h2, h3 {
 p {
   margin-left: 20px;
   margin-right: 20px;
+  font-size: 15px;
 }
 
 .container {
@@ -53,36 +54,6 @@ h1, h2, h3 {
   font-weight: bold;
 }
 
-h2 {
-  margin: 8px 20px 0;
-  font-size: 50px;
-  color: #e7e7e7;
-}
-
-h3 {
-  margin: 0 20px 0 14px;
-  font-size: 28px;
-  color: #c1c1c1;
-}
-
-h3 .enum {
-  display: block;
-  float: left;
-  width: 17px;
-  margin: 7px 6px 0;
-  border-bottom: 4px solid #5e42b0;
-  font-size: 0.5em;
-  color: #000000;
-}
-
-h3 .enum-purple {
-  color: #5e42b0
-}
-
-h3 .enum-under-invert {
-  border-bottom-color: #FFFFFF
-}
-
 #h1-1 {
   top: 206px;
   left: 20px;
@@ -93,6 +64,18 @@ h3 .enum-under-invert {
   top: 256px;
   left: 66px;
   position: absolute;
+}
+
+h2 {
+  margin: 8px 20px 0;
+  font-size: 50px;
+  color: #e7e7e7;
+}
+
+h3 {
+  margin: 0 20px 0 0;
+  font-size: 27px;
+  color: #c1c1c1;
 }
 
 /* Header */
@@ -160,6 +143,25 @@ button svg {
   height: 302px;
 }
 
+.enum {
+  display: block;
+  float: left;
+  width: 17px;
+  margin: 7px 6px 0 20px;
+  border-bottom: 4px solid #5e42b0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.enum-purple {
+  color: #5e42b0
+}
+
+.enum-under-invert {
+  border-bottom-color: #FFFFFF
+}
+
 .grey1 {
   background-color: #fafafa;
 }
@@ -177,11 +179,10 @@ button svg {
   position: relative;
   padding-top: 52px;
   padding-bottom: 36px;
-  font-size: 15px;
 }
 
-.paragraph p {
-  line-height: 19px;
+p {
+  line-height: 18px;
 }
 
 /* first paragraph has bigger top padding */
@@ -201,6 +202,52 @@ button svg {
 .dark-purple {
   background-color: #090c35;
   color: #ffffff;
+}
+
+/* Suggestions */
+
+/*.be-active .img-container {
+  background: url('../img/01_be_active_320.png');
+  width: 100%;
+  max-width: 320px;
+  height: 351px;
+}*/
+
+.suggestions img {
+  object-fit: cover;
+  width: 100%;
+  max-width: 320px;
+  height: 351px;
+}
+
+.enum-container-outer {
+  height: 0;
+  float: left;
+}
+
+.enum-container {
+  position: relative;
+  top: -83px;
+  left: 20px;
+  width: 70px;
+  height: 70px;
+  background-color: #5e42b0;
+}
+
+.suggestions .enum {
+  color: #ffffff;
+  border-color: #8d7ac7;
+  margin-top: 22px;
+  margin-left: 27px;
+}
+
+.suggestions h3 {
+  margin: 20px 20px 0;
+  color: #e7e7e7;
+}
+
+.text-holder p {
+  margin: 12px 20px 77px 20px;
 }
 
 @media (max-width: 640px) {
