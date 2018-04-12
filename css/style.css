@@ -85,7 +85,7 @@ h3 {
 
 .header {
   height: 560px;
-  background: url('../img/bg-01_320.png');
+  background: url('../img/header_bg_320.png');
   background-size: contain;
   background-color: #1c1f40;
   color: #FFFFFF;
@@ -252,7 +252,7 @@ p {
 
 .footer {
   height: 568px;
-  background: url('../img/bg_footer_320.png');
+  background: url('../img/footer_bg_320.png');
   background-size: contain;
   background-color: #1c1f40;
   color: #FFFFFF;
