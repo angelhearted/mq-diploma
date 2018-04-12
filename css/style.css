@@ -76,46 +76,25 @@ h3 {
 }
 
 .header h1 {
-  top: 206px;
-  left: 20px;
+  position: absolute;
 }
 
 .downloads {
-  position: absolute;
-  top: 400px;
-  margin-left: 20px;
-  margin-right: 20px;
-  width: calc(100% - 40px);
+  position: relative;
 }
 
 button {
   background-color: #5e42b0;
-  border-radius: 18px;
   border: 0px;
-  height: 32px;
-  width: 100%;
-  font-size: 7px;
+  text-align: left;
   text-transform: uppercase;
   color: #FFFFFF;
-}
-
-button:nth-child(2) {
-  margin-top: 14px;
 }
 
 button svg {
   display: block;
   float: left;
   position: relative;
-  top: -3px;
-  height: 22px;
-  margin-right: 0.8em;
-}
-
-.downloads .get-on {
-  width: 104px;
-  margin: 3px auto 0;
-  text-align: left;
 }
 
 .downloads .store-name {
@@ -303,6 +282,34 @@ p {
     left: 66px;
   }
 
+  .downloads {
+    top: 295px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  button {
+    width: 100%;
+    height: 32px;
+    border-radius: 18px;
+    font-size: 7px;
+  }
+
+  button:nth-child(2) {
+    margin-top: 14px;
+  }
+
+  button svg {
+    top: -3px;
+    height: 22px;
+    margin-right: 0.8em;
+  }
+
+  .downloads .get-on {
+    width: 104px;
+    margin: 3px auto 0;
+  }
+
   /* Athletes */
 
   .block-athlets img {
@@ -327,14 +334,42 @@ p {
   #h1-1 {
     top: 250px;
     left: 12%;
-    position: absolute;
   }
 
   #h1-2 {
     top: 328px;
     left: 25%;
-    position: absolute;
   }
+
+  .downloads {
+    top: 682px;
+    margin-left: 56px;
+    margin-right: 56px;
+  }
+
+  button {
+    width: 48%;
+    height: 78px;
+    padding: 5px 6.5% 0 5%;;
+    border-radius: 39px;
+    font-size: 14px;
+  }
+
+  button:nth-child(2) {
+    float: right;
+  }
+
+  /*.downloads .get-on {
+    margin: 0 auto;
+  }*/
+
+  button svg {
+    top: -3px;
+    height: 44px;
+    margin-right: 9%;
+  }
+
+  /* Athletes */
 
   .block-athlets img {
     /*left: 22%;
