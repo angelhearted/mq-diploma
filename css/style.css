@@ -20,6 +20,8 @@ body {
 h1, h2, h3 {
   margin: 0;
   padding: 0;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 p {
@@ -52,23 +54,6 @@ p {
   margin: 80px auto 0;
 }
 
-h1, h2, h3 {
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-#h1-1 {
-  top: 206px;
-  left: 20px;
-  position: absolute;
-}
-
-#h1-2 {
-  top: 256px;
-  left: 66px;
-  position: absolute;
-}
-
 h2 {
   margin: 8px 20px 0;
   font-size: 50px;
@@ -84,11 +69,15 @@ h3 {
 /* Header */
 
 .header {
-  height: 560px;
-  background: url('../img/header_bg_320.png');
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   background-color: #1c1f40;
   color: #FFFFFF;
+}
+
+.header h1 {
+  top: 206px;
+  left: 20px;
 }
 
 .downloads {
@@ -139,8 +128,6 @@ button svg {
 
 .block-athlets img {
   position: absolute;
-  left: 22%;
-  margin-top: 8px;
   z-index: 10;
 }
 
@@ -298,16 +285,75 @@ p {
   body {
     font-size: 14px;
   }
+
+  /* Header */
+
+  .header {
+    height: 560px;
+    background-image: url('../img/header_bg_320.png');
+  }
+
+  #h1-1 {
+    top: 206px;
+    left: 20px;
+  }
+
+  #h1-2 {
+    top: 256px;
+    left: 66px;
+  }
+
+  /* Athletes */
+
+  .block-athlets img {
+    left: 22%;
+    margin-top: 8px;
+  }
 }
 
 @media (min-width: 641px) and (max-width: 960px) {
-  
+
+  /* Header */
+
+  .header {
+    height: 960px;
+    background-image: url('../img/header_bg_768.png');
+  }
+
+  h1 {
+    font-size: 63px;
+  }
+
+  #h1-1 {
+    top: 250px;
+    left: 12%;
+    position: absolute;
+  }
+
+  #h1-2 {
+    top: 328px;
+    left: 25%;
+    position: absolute;
+  }
+
+  .block-athlets img {
+    /*left: 22%;
+    margin-top: 8px;*/
+  }
 }
 
-@media (min-width: 961px) and (max-width: 1919px) {
-  
+@media (min-width: 961px) {
+  /* Header */
+
+  .header {
+    height: 960px;
+    background-image: url('../img/header_bg_1920.png');
+  }
 }
 
-@media (min-width: 1920px) {
-
+@media (min-width: 1921px) {
+  .container {
+    width: 1920px;
+    margin: 0 auto;
+  }
 }

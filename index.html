@@ -52,7 +52,11 @@
       <div class='block-athlets'>
         <div class='img-paragraph'>
           <h2>Athlets</h2>
-          <img src='img/am_footballer_320.png' alt='American Football player'>
+          <picture>
+            <source media="(max-width: 320px)" srcset="img/am_footballer_320.png">
+            <source media="(max-width: 768px)" srcset="img/am_footballer_768.png">
+            <img src='img/am_footballer_320.png' alt='American Football player'>
+          </picture>
         </div>
         <div class='grey1 paragraph first-paragraph'>
           <h3><span class='enum'>01</span>Connection</h3>
